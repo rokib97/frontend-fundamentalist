@@ -1,4 +1,11 @@
-import { AnotherHello, HelloWorld } from "./another";
+const HelloWorld = () => {
+  return React.createElement("p", { style: { color: "red" } }, "Hello World");
+};
+
+const AnotherHello = () => {
+  return React.createElement("p", {}, "Another Hello");
+};
+
 const App = () => {
   return React.createElement(
     "h1",
