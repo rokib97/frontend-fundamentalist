@@ -1,10 +1,15 @@
+import { useState } from "react";
 import "./App.css";
-import UseStateExample from "./UseStateExample";
+import FormExample from "./components/FormExample";
+import UseStateExample from "./components/UseStateExample";
 
 function App() {
+  const [counter, setCounter] = useState(0);
+
   return (
     <div>
-      <UseStateExample />
+      <UseStateExample counter={counter} setCounter={setCounter} />
+      <FormExample />
     </div>
   );
 }
