@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import FormExample from "./components/FormExample";
+import UseReducerFormTwo from "./components/UseReducerFormTwo";
 import UseStateExample from "./components/UseStateExample";
 
 function App() {
@@ -9,7 +9,10 @@ function App() {
   return (
     <div>
       <UseStateExample counter={counter} setCounter={setCounter} />
-      <FormExample />
+      {/* <FormExample />
+      <UseReducerExample /> */}
+      {/* <UseReducerWithForm /> */}
+      <UseReducerFormTwo />
     </div>
   );
 }
