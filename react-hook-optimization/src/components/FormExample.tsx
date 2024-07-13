@@ -21,12 +21,14 @@ const FormExample = () => {
         type="text"
         name="name"
         id=""
+        value={user.name}
         className="border-2"
       />
       <input
         onChange={handleChnage}
         type="text"
         name="email"
+        value={user.email}
         id=""
         className="border-2"
       />
