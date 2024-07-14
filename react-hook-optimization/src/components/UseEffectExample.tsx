@@ -2,6 +2,11 @@ import { useEffect, useState } from "react";
 
 const UseEffectExample = () => {
   const [hidden, setHidden] = useState(true);
+  const [user, setUser] = useState({ name: "", email: "" });
+  console.log(user);
+  useEffect(() => {
+    console.log("render");
+  }, [user.name, user.email]);
 
   return (
     <div>
@@ -10,6 +15,16 @@ const UseEffectExample = () => {
       </button>
 
       {!hidden && <Todo />}
+      <input
+        onBlur={(e) => setUser({ ...user, name: e.target.value })}
+        type="text"
+        name="name"
+      />
+      <input
+        onBlur={(e) => setUser({ ...user, email: e.target.value })}
+        type="text"
+        name="email"
+      />
     </div>
   );
 };
