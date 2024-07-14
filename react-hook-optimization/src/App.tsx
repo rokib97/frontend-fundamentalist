@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import UseEffectExample from "./components/UseEffectExample";
 import UseReducerFormTwo from "./components/UseReducerFormTwo";
 import UseStateExample from "./components/UseStateExample";
 
@@ -13,6 +14,7 @@ function App() {
       <UseReducerExample /> */}
       {/* <UseReducerWithForm /> */}
       <UseReducerFormTwo />
+      <UseEffectExample />
     </div>
   );
 }
